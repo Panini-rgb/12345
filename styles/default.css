@@ -1,0 +1,593 @@
+body {
+      font-family: 'TT Lakes Bold';
+  width: 320px;
+   
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 320px;
+   
+  margin: 0 auto;
+  display: flex;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 320px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 0px;
+  padding-bottom: 18px;
+  padding-left: 0px;
+   align-items: center;
+   border-bottom: 1px solid #D9FFF5;
+}
+
+
+
+
+.title {
+    display: flex;
+     align-items: center;
+     width: 304px;
+     height: 40px;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+ margin-bottom: 6px;
+ 
+}
+.title__text {
+font-size:28px;
+line-height: 40px;
+letter-spacing: -0.6px;
+font-weight: normal;
+padding-right: 55px;
+}
+
+.list {
+  font-family: 'TT Lakes Medium';
+  display: flex;
+   align-items: center;
+  white-space: nowrap;
+  margin-left: 16px;
+  overflow: auto;
+  scrollbar-width: none;
+  color: #7E7E82;
+   -webkit-mask-image: linear-gradient( to right, black 85%, transparent 100%);
+      mask-image: linear-gradient( to right, black 85%, transparent 100%);
+}
+
+.navigation {
+  display: flex;
+}
+
+.icon__button,
+.icon__checkstatus,
+.icon__repair {
+  width:40px;
+  height:40px;    
+}
+
+
+
+.icon__call,
+.icon__chat,
+.icon__profile,
+.icon__divider2,
+.icon__divider1,
+.icon__block,
+.icon__text,
+.icon__text2,
+.icon__text3,
+.list__note1_1120px,
+.list__note2_1120px,
+.list__note3_1120px,
+.basic_text4 {
+  display: none;
+}
+
+.icon__Group {
+   width:97px;
+   height:51px;
+}
+
+.icon__divider {
+  width:2px;
+  height:32px;
+}
+
+.title__icon {
+  width:4px;
+  height:40px;
+}
+
+.main-container {
+  background-color: #F8F8F8;
+   height: 509px;
+}
+
+.list__note1 {
+line-height: 24px;
+letter-spacing: -0.2px;
+   border: 1px solid #B8FFEC; /* Цвет рамки */
+  padding: 8px 13px 8px 16px;             /* Отступ внутри рамки */
+  border-radius: 6px;        /* Скругление углов (по желанию) */
+  background-color: #FFFFFF;
+}
+
+.list__note2,
+.list__note3,
+.list__note4,
+.list__note5,
+.list__note6,
+.list__note7{
+  line-height: 24px;
+letter-spacing: -0.2px;
+  padding: 8px 10px 8px 20px;
+  border-radius: 6px;
+}
+
+
+.basic {
+  display: flex;
+  flex-direction: column;
+  
+}
+.basic__further {
+  display: flex;
+  margin-left: 16px;
+}
+
+.basic_text1 {
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 18px;
+letter-spacing: 0.2px;
+padding: 0px 16px 0px 16px;
+margin-top: 9px;
+}
+
+.basic_text2 {
+ display: none;
+}
+
+.basic__arrow {
+    width:8px;
+  height:11px; 
+   padding: 7px 8px 16px 8px;
+}
+
+.basic_text3 {
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+letter-spacing: -0.2px;
+ margin-left: 8px;
+}
+
+.basic__signboard {
+ padding: 5px 0px 0px 0px;
+ width: 320px;
+ height: 176px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) { 
+body {
+   width: 768px;
+      font-family: 'TT Lakes Bold';
+margin: 0 auto;
+box-sizing: border-box;
+}
+
+
+
+
+.icon {
+    display: flex;
+    justify-content:flex-start;
+    width: 768px;
+   align-items: center;
+   border-bottom: 1px solid #D9FFF5;
+}
+ .icon__button,
+.icon__checkstatus,
+.icon__repair,
+.icon__call,
+.icon__chat,
+.icon__profile
+ {
+  width:40px;
+  height:40px;
+display: block;
+}
+
+.icon__divider2,
+.icon__divider1 {
+  width:2px;
+  height:32px;
+  display: block;
+}
+
+
+.icon__divider,
+.icon__block,
+.icon__text,
+.icon__text2,
+.icon__text3,
+.list__note1_1120px,
+.list__note2_1120px,
+.list__note3_1120px,
+.basic_text4 {
+  display: none;
+}
+
+.icon__button {
+  
+ 
+  
+  padding-left: 24px;
+
+}
+
+.icon__divider1 {
+ padding-left: 21px;
+
+}
+
+.icon__Group {
+ padding-right: 250px;
+ padding-left: 21px;
+
+}
+
+.icon__chat {
+  padding-left: 16px;
+}
+
+.icon__profile {
+  padding-left: 16px;
+}
+
+.icon__divider2 {
+  padding-left: 20px;
+}
+
+.icon__repair {
+  padding-left: 20px;
+}
+
+.icon__checkstatus {
+  padding-left: 16px;
+}
+
+.title__text {
+  font-size:28px;
+line-height: 40px;
+letter-spacing: -0.6px;
+font-weight: normal;
+padding-right: 48px;
+}
+
+.list {
+  font-family: 'TT Lakes Medium';
+  display: flex;
+   align-items: center;
+  white-space: nowrap;
+  margin-left: 24px;
+  margin-top: 13px;
+  overflow: auto;
+  scrollbar-width: none;
+  color: #7E7E82;
+   -webkit-mask-image: linear-gradient( to right, black 85%, transparent 100%);
+      mask-image: linear-gradient( to right, black 85%, transparent 100%);
+
+}
+
+.list__note1 {
+line-height: 24px;
+letter-spacing: -0.2px;
+
+   border: 1px solid #B8FFEC; /* Цвет рамки */
+   padding: 8px 15px 7px 18px;        /* Отступ внутри рамки */
+  border-radius: 6px;        /* Скругление углов (по желанию) */
+  background-color: #FFFFFF;
+}
+
+.list__note2,
+.list__note3,
+.list__note4,
+.list__note5,
+.list__note6,
+.list__note7{
+  
+  line-height: 24px;
+letter-spacing: -0.2px;
+  padding:0px 0px 0px 0px;
+  border-radius: 6px;
+}
+.list__note2{
+  padding:0px 0px 0px 16px;
+}
+.list__note3 {
+  padding:0px 0px 0px 28px;
+}
+.list__note4 {
+  padding:0px 0px 0px 38px;
+}
+
+.basic_text1 {
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 20px;
+letter-spacing: 0.2px;
+padding: 0px 0px 0px 0px;
+margin-top: 9px;
+} 
+
+.basic_text2 {
+ display: block;
+ font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 20px;
+letter-spacing: 0.2px;
+padding: 4px 0px 0px 0px;
+margin: 0 auto;
+}
+
+.basic {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  gap: 48px;
+}
+
+.basic__column {
+padding: 10px 2px 0px 22px;
+}
+
+.basic__signboard {
+ padding: 18px 22px 0px 0px;
+ width: 360px;
+ height: 208px;
+border-radius: 10px 10px 10px 10px;
+}
+
+.basic__further {
+  display: flex;
+padding: 10px 22px 0px 0px;
+margin-left: 3px;
+}
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  body {
+    width: 1120px;
+    
+    background-color: #F8F8F8;
+  }
+
+
+.icon {
+   display: flex;
+  flex-direction:row;
+  justify-content:start;
+  margin-top: 34px;
+     width: 1120px;
+     padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+   border-bottom:none;
+  
+  }
+
+  .icon__block,
+  .icon__text,
+  .icon__text2,
+.icon__text3,
+.basic_text4 {
+    display: block;
+  }
+
+.icon__block {
+   width:3px;
+  height:40px;
+}
+.icon__text {
+  font-size:28px;
+  line-height: 40px;
+letter-spacing: -0.6px;
+margin: 0px 0px 0px 30px;
+
+}
+.icon__text2{
+  margin-left: 450px;
+  font-family: 'TT Lakes medium';
+  line-height: 24px;
+letter-spacing: -0.2px;
+}
+
+.icon__repair{
+  margin-left: 10px;
+  
+}
+
+.icon__text3 {
+margin-left: 32px;
+font-family: 'TT Lakes medium';
+line-height: 24px;
+letter-spacing: -0.2px;
+}
+
+.icon__checkstatus {
+  margin-left: 10px;
+}
+  .icon__button,
+  .icon__Group,
+  .icon__divider,
+  .icon__call,
+  .icon__chat,
+  .icon__profile,
+  .icon__divider1,
+  .icon__divider2,
+  .title__icon,
+  .title__text
+   {
+    display: none;
+  }
+
+.title{
+  display: none;
+}
+
+  
+  
+
+  .basic {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .basic__column {
+    padding: 12px 0px 0px 32px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .basic__signboard {
+    width: 531px;
+    height: 307px;
+    object-fit: cover;
+    padding: 0;
+    margin: 10px 28px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
+  }
+.basic_text1 {
+  font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    padding:0px 0px 0px 0px; 
+    color: #1B1C21;
+}
+  .basic_text2 {
+    display: block;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    padding:8px 0px 0px 3px;
+    color: #1B1C21;
+    margin: 0px 0px 0px 0px;
+  }
+  .basic_text4 {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    display: inline;
+    
+  }
+
+  .list {
+    margin-left: 0;
+    flex-wrap: wrap;
+    
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
+    margin-bottom: 20px;
+    padding: 0 16px;
+    margin: 0px 0px 0px 0px;
+    line-height: 24px;
+letter-spacing: -0.2px;
+  }
+
+  .list__note1_1120px,
+  .list__note2_1120px,
+  .list__note3_1120px {
+    display: block;
+     margin: 0px 0px 0px 0px;
+  }
+.list__note2_1120px {
+  margin: 0px 0px 0px 18px;
+}
+.list__note3_1120px {
+  margin: 0px 0px 0px 18px;
+}
+  .list__note3,
+  .list__note7 {
+ margin: 0px 0px 0px 22px;
+  }
+  .list__note4 {
+    margin: 2px 0px 0px 14px
+  }
+  .list__note5 {
+    margin: 0px 0px 0px 0px;
+  }
+.list__note7 { 
+  padding: 0px  0px  0px  0px;
+          margin: 12px 0px 0px 40px;
+}
+  .list__note1_1120px {
+    margin: 0px 0px 0px 22px;
+     border: 1px solid #B8FFEC; /* Цвет рамки */
+  padding: 8px 28px 8px 16px;             /* Отступ внутри рамки */
+  border-radius: 6px;        /* Скругление углов (по желанию) */
+  background-color: #FFFFFF;
+  }
+  .list__note1,
+  .list__note2,
+  .list__note5,
+  .list__note6 {
+    display: none;
+  }
+
+  .list > p {
+    background-color: #f8f8f8;
+  }
+
+  
+
+  .basic__further {
+    margin: 0px 0px 0px 0px;
+    padding: 12px 0px 0px 0px;
+  }
+}
+/*Alyona*
+.container-forLaptop{
+  display: contents;
+}
+
+body{
+  width: 100%;
+}
+
+.icon{
+  width: 100%;
+}
+
+@media (min-width: 321px) {
+.container-forLaptop{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  justify-content: space-between;
+}
+
+}
+/*Alyona*/ 
