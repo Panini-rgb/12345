@@ -1,14 +1,14 @@
 body {
       font-family: 'TT Lakes Bold';
-  width: 320px;
-   
+  
+   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .container {
-  width: 320px;
-   
+  
+   width: 320px;
   margin: 0 auto;
   display: flex;
 }
@@ -55,7 +55,7 @@ padding-right: 55px;
   display: flex;
    align-items: center;
   white-space: nowrap;
-  margin-left: 16px;
+  padding-left: 16px;
   overflow: auto;
   scrollbar-width: none;
   color: #7E7E82;
@@ -109,7 +109,8 @@ padding-right: 55px;
 
 .main-container {
   background-color: #F8F8F8;
-   height: 509px;
+    min-height: 100vh;
+  
 }
 
 .list__note1 {
@@ -177,7 +178,7 @@ letter-spacing: -0.2px;
  height: 176px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) { 
+@media (min-width: 321px) and (max-width: 768px) { 
 body {
    width: 768px;
       font-family: 'TT Lakes Bold';
@@ -279,8 +280,9 @@ padding-right: 48px;
   display: flex;
    align-items: center;
   white-space: nowrap;
-  margin-left: 24px;
+  margin-left: 0px;
   margin-top: 13px;
+  padding-left: 24px;
   overflow: auto;
   scrollbar-width: none;
   color: #7E7E82;
@@ -318,6 +320,18 @@ letter-spacing: -0.2px;
   padding:0px 0px 0px 28px;
 }
 .list__note4 {
+  padding:0px 0px 0px 38px;
+}
+
+.list__note5 {
+  padding:0px 0px 0px 38px;
+}
+
+.list__note6 {
+  padding:0px 0px 0px 38px;
+}
+
+.list__note7 {
   padding:0px 0px 0px 38px;
 }
 
@@ -368,7 +382,7 @@ margin-left: 3px;
 
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: 769px)  {
   body {
     width: 1120px;
     
