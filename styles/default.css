@@ -582,6 +582,375 @@ letter-spacing: -0.2px;
     padding: 12px 0px 0px 0px;
   }
 }
+
+
+/* ====== МОДАЛЬНОЕ МЕНЮ ====== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: flex-start;
+  z-index: 1000;  
+  overflow-y: auto;
+}
+
+.modal--active {
+  display: flex;
+}
+
+.modal__content {
+  background: #fff;
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal--active .modal__content {
+  transform: translateX(0);
+}
+
+/* Верхняя панель */
+.modal__header {
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.modal__logo {
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 4px;
+}
+
+.modal__close,
+.modal__search {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__close {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 24px;
+}
+
+.modal__search {
+  
+  padding-left: 95px;
+  padding-top: 24px;
+}
+/* Навигация */
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+  
+}
+
+.modal__nav a {
+  font-size: 16px;
+  color: #1B1C21;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: 'TT Lakes medium';
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 17px;
+}
+
+.active-1 {
+ margin-top: -14px;
+}
+
+.active-2 {
+ margin-top: 4px;
+}
+.active-3 {
+ margin-top: 4px;
+}
+.active-4 {
+ margin-top: 4px;
+}
+.active-5 {
+ margin-top: 4px;
+}
+.active-6 {
+ margin-top: 4px;
+}
+.active-7 {
+ margin-top: 4px;
+}
+
+.modal__nav a {
+  position: relative;
+}
+
+.modal__nav a:hover {
+  color: #7E7E82;
+}
+
+.modal__nav a:hover::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Подвал */
+.modal__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__icons {
+  display: flex;
+  gap: 16px;
+  margin-top: -8px;
+    margin-left: 16px;
+}
+
+.modal__mail {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 16px;
+    margin-top: 4px;
+}
+
+.modal__phone {
+  font-size: 24px;
+  font-weight: bold;
+   line-height: 32px;
+letter-spacing: -0.6px;
+margin-left: 16px;
+    margin-top: 1px;
+}
+
+.modal__lang {
+   font-size: 16px; 
+  display: flex;
+  font-family: 'TT Lakes medium';
+  gap: 10px;
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 12px;
+    margin-top: -29px;
+  
+}
+
+.modal__lang input[type="radio"] {
+  display: none;
+}
+
+.lang-btn {
+  cursor: pointer;
+  color: #1B1C21;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lang-btn:hover {
+ color: #7E7E82;
+}
+
+
+
+/* ===== Планшет (768px–1119px) ===== */
+@media (min-width: 321px) and (max-width: 768px) {
+  .modal__content {
+    width: 320px;
+    height: 200%;
+  }
+
+  .modal__nav a {
+    font-size: 18px;
+  }
+
+  .modal__phone {
+    font-size: 20px;
+  }
+
+  .modal__header {
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.modal__logo {
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 4px;
+}
+
+.modal__close,
+.modal__search {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__close {
+          padding-right: 15px;
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+
+.modal__search {
+  
+  padding-left: 79px;
+    padding-top: 24px;
+}
+
+/* Навигация */
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+  
+}
+
+.modal__nav a {
+  font-size: 16px;
+  color: #1B1C21;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: 'TT Lakes medium';
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 24px;
+}
+
+.active-1 {
+ margin-top: 10px;
+ 
+}
+
+.active-2 {
+ margin-top: 12px;
+}
+.active-3 {
+ margin-top: 12px;
+}
+.active-4 {
+ margin-top: 12px;
+}
+.active-5 {
+ margin-top: 12px;
+}
+.active-6 {
+ margin-top: 12px;
+}
+.active-7 {
+ margin-top: 12px;
+}
+
+.modal__nav a {
+  position: relative;
+}
+
+.modal__nav a:hover {
+  color: #7E7E82;
+}
+
+.modal__nav a:hover::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  border-radius: 0 4px 4px 0;
+}
+
+
+
+/* Подвал */
+.modal__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 227px;
+        margin-left: 24px;
+}
+
+.modal__mail {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 24px;
+    margin-top: 5px;
+}
+
+.modal__phone {
+  font-size: 24px;
+  font-weight: bold;
+   line-height: 32px;
+letter-spacing: -0.6px;
+        margin-left: 24px;
+        margin-top: -1px;
+}
+
+.modal__lang {
+   font-size: 16px; 
+  display: flex;
+  font-family: 'TT Lakes medium';
+  gap: 10px;
+  line-height: 24px;
+letter-spacing: -0.2px;
+margin-left: 12px;
+    margin-top: -29px;
+  
+}
+
+.modal__lang input[type="radio"] {
+  display: none;
+}
+
+.lang-btn {
+  cursor: pointer;
+  color: #1B1C21;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lang-btn:hover {
+ color: #7E7E82;
+}
+}
+
+/* ===== Десктоп (1120px+) — меню скрыто ===== */
+@media (min-width: 1120px) {
+  .modal {
+    display: none !important;
+  }
+}
+
 /*Alyona*
 .container-forLaptop{
   display: contents;

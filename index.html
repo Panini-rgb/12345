@@ -27,12 +27,78 @@
                     <p class="icon__text3"> Статус ремонта </p>
                         <img class="icon__checkstatus" src="assets/checkstatus.png"  alt="кнопка" >
             </header>
+            <!-- Модальное меню -->
+  <div class="modal" id="menuModal">
+    <div class="modal__content">
+      
+      <!-- Верх -->
+      <div class="modal__header">
+        <button class="modal__close" id="closeModal">
+          <img src="assets/search.png" alt="Закрыть">
+        </button>
+        <img src="assets/Group3.png" alt="Логотип CPS" class="modal__logo">
+        <button class="modal__search">
+          <img src="assets/search1.png" alt="Поиск">
+        </button>
+      </div>
+
+      <!-- Навигация -->
+      <nav class="modal__nav">
+        
+
+        <a href="#" class="active-1">Ремонт техники</a>
+        
+       
+        <a href="#" class="active-2">Услуги и сервисы</a>
+       
+        <a href="#" class="active-3">Корпоративным клиентам</a>
+        <a href="#" class="active-4">Продавцам техники</a>
+        <a href="#" class="active-5">Партнерам</a>
+        <a href="#" class="active-5">Производителям</a>
+        <a href="#" class="active-6">Наши сервисные центры</a>
+        <a href="#" class="active-7">Контакты</a>
+        
+      </nav>
+
+      <!-- Подвал -->
+      <div class="modal__footer">
+        <div class="modal__icons">
+          <img src="assets/call.png" alt="Звонок" class="modal__icons_call">
+          <img src="assets/chat.png" alt="Чат" class="modal__icons_chat">
+          <img src="assets/profile.png" alt="Профиль" class="modal__icons_profile">
+        </div>
+        <a href="mailto:mail@cps.com" class="modal__mail">mail@cps.com</a>
+        <p class="modal__phone">8 800 890 8900</p>
+        <div class="modal__lang">
+          <input type="radio" name="lang" id="lang-ru" checked>
+  <label for="lang-ru" class="lang-btn">RU</label>
+
+  <input type="radio" name="lang" id="lang-en">
+  <label for="lang-en" class="lang-btn">EN</label>
+
+  <input type="radio" name="lang" id="lang-ch">
+  <label for="lang-ch" class="lang-btn">CH</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <main class="main">
+    <div class="main-container">
+      <div class="title">
+        <img class="title__icon" src="assets/highlight.png">
+        <h1 class="title__text">Услуги и сервисы</h1>
+      </div>
+      <!-- Здесь твои блоки -->
+    </div>
+  </main>
+
+  <!-- Подключаем JS -->
+  <script src="scripts/menu.js"></script>
         <main class="main">
-            <div class="main-container">
-            <div class="title">
-                <img class="title__icon" src="assets/highlight.png">
-            <h1 class="title__text">Услуги и сервисы</h1>
-            </div>
+            
             <div class="list">
                 <p class="list__note1_1120px">Ремонтируемые бренды</p>
                 <p class="list__note2_1120px">Ремонтируемые устройства</p>
