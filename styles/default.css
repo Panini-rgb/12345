@@ -1,3 +1,4 @@
+
 body {
       font-family: 'TT Lakes Bold';
   
@@ -49,7 +50,17 @@ font-size:28px;
 line-height: 40px;
 letter-spacing: -0.6px;
 font-weight: normal;
-padding-right: 55px;
+padding-left: 18px;
+ 
+}
+.title__text:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border-radius: 0 4px 4px 0;
 }
 
 .list {
@@ -588,11 +599,14 @@ letter-spacing: -0.2px;
 .modal {
   position: fixed;
   inset: 0;
+   width: 320px;           
+  height: 100%;          
   background: rgba(0,0,0,0.6);
   display: none;
   justify-content: flex-start;
   z-index: 1000;  
-  overflow-y: auto;
+  align-items: stretch;
+  
 }
 
 .modal--active {
@@ -601,13 +615,16 @@ letter-spacing: -0.2px;
 
 .modal__content {
   background: #fff;
-  width: 320px;
-  height: 100%;
+ width: 100%;
+   height: 100%; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+    justify-content: space-between; 
+  position: relative;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  
 }
 
 .modal--active .modal__content {
@@ -618,7 +635,7 @@ letter-spacing: -0.2px;
 .modal__header {
   display: flex;
   align-items: center;
-  
+ margin-bottom: 10px;
   
 }
 
@@ -648,14 +665,17 @@ letter-spacing: -0.2px;
 }
 /* Навигация */
 .modal__nav {
+    flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 40px 0;
-  
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+  list-style: none;
+  padding: 0;
 }
 
-.modal__nav a {
+.modal__nav li {
   font-size: 16px;
   color: #1B1C21;
   text-decoration: none;
@@ -666,38 +686,19 @@ letter-spacing: -0.2px;
 margin-left: 17px;
 }
 
-.active-1 {
- margin-top: -14px;
-}
 
-.active-2 {
- margin-top: 4px;
-}
-.active-3 {
- margin-top: 4px;
-}
-.active-4 {
- margin-top: 4px;
-}
-.active-5 {
- margin-top: 4px;
-}
-.active-6 {
- margin-top: 4px;
-}
-.active-7 {
- margin-top: 4px;
-}
 
-.modal__nav a {
+
+
+.modal__nav li {
   position: relative;
 }
 
-.modal__nav a:hover {
+.modal__nav li:hover {
   color: #7E7E82;
 }
 
-.modal__nav a:hover::before {
+.modal__nav li:hover::before {
   content: "";
   position: absolute;
   left: -17px;
@@ -712,31 +713,49 @@ margin-left: 17px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 20px;
 }
 
 .modal__icons {
+   
   display: flex;
-  gap: 16px;
-  margin-top: -8px;
-    margin-left: 16px;
+  gap: 4px;
+ 
+    margin-left: 10px;
 }
 
+.modal__call,
+.modal__chat,
+.modal__profile {
+  background: none;
+  border: none;
+  cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.modal__call:hover,
+.modal__chat:hover,
+.modal__profile:hover{
+ transform: scale(1.08);
+ 
+}
 .modal__mail {
   font-size: 16px;
   color: #333;
   text-decoration: none;
   line-height: 24px;
 letter-spacing: -0.2px;
-margin-left: 16px;
-    margin-top: 4px;
+margin-left: 15px;
+    margin-top: -2px;
 }
 
 .modal__phone {
+   color: #333;
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
    line-height: 32px;
 letter-spacing: -0.6px;
-margin-left: 16px;
+margin-left: 15px;
     margin-top: 1px;
 }
 
@@ -747,8 +766,8 @@ margin-left: 16px;
   gap: 10px;
   line-height: 24px;
 letter-spacing: -0.2px;
-margin-left: 12px;
-    margin-top: -29px;
+margin-left: 15px;
+    margin-top: -5px;
   
 }
 
@@ -757,11 +776,12 @@ margin-left: 12px;
 }
 
 .lang-btn {
+  
   cursor: pointer;
   color: #1B1C21;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease-in-out;
 }
 
 .lang-btn:hover {
@@ -772,10 +792,36 @@ margin-left: 12px;
 
 /* ===== Планшет (768px–1119px) ===== */
 @media (min-width: 321px) and (max-width: 768px) {
+  .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; 
+  justify-content: flex-start;
+  align-items: stretch;
+  z-index: 100;
+}
+.modal.modal--active {
+  display: flex;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 40%,   
+    rgba(255, 255, 255, 0.7) 75%, 
+    rgba(255, 255, 255, 0.9) 100% 
+  );
+  backdrop-filter: blur(5px); 
+}
   .modal__content {
     width: 320px;
-    height: 200%;
-  }
+      height: 100%; 
+       background: #fff;
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+}
 
   .modal__nav a {
     font-size: 18px;
@@ -788,7 +834,7 @@ margin-left: 12px;
   .modal__header {
   display: flex;
   align-items: center;
-  
+  margin-bottom: 32px;
   
 }
 
@@ -822,12 +868,12 @@ margin-left: 12px;
 .modal__nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 40px 0;
+  gap: 32px;
   
+   
 }
 
-.modal__nav a {
+.modal__nav li {
   font-size: 16px;
   color: #1B1C21;
   text-decoration: none;
@@ -838,39 +884,18 @@ letter-spacing: -0.2px;
 margin-left: 24px;
 }
 
-.active-1 {
- margin-top: 10px;
- 
-}
 
-.active-2 {
- margin-top: 12px;
-}
-.active-3 {
- margin-top: 12px;
-}
-.active-4 {
- margin-top: 12px;
-}
-.active-5 {
- margin-top: 12px;
-}
-.active-6 {
- margin-top: 12px;
-}
-.active-7 {
- margin-top: 12px;
-}
 
-.modal__nav a {
+.modal__nav li {
   position: relative;
 }
 
-.modal__nav a:hover {
+.modal__nav li:hover {
   color: #7E7E82;
+ 
 }
 
-.modal__nav a:hover::before {
+.modal__nav li:hover::before {
   content: "";
   position: absolute;
   left: -24px;
@@ -891,9 +916,9 @@ margin-left: 24px;
 
 .modal__icons {
   display: flex;
-  gap: 16px;
-  margin-top: 227px;
-        margin-left: 24px;
+  gap: 4px;
+ 
+        margin-left: 18px;
 }
 
 .modal__mail {
@@ -903,16 +928,17 @@ margin-left: 24px;
   line-height: 24px;
 letter-spacing: -0.2px;
 margin-left: 24px;
-    margin-top: 5px;
+    
 }
 
 .modal__phone {
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
    line-height: 32px;
 letter-spacing: -0.6px;
         margin-left: 24px;
-        margin-top: -1px;
+        
 }
 
 .modal__lang {
@@ -922,8 +948,8 @@ letter-spacing: -0.6px;
   gap: 10px;
   line-height: 24px;
 letter-spacing: -0.2px;
-margin-left: 12px;
-    margin-top: -29px;
+margin-left: 23px;
+        margin-top: 27px;
   
 }
 

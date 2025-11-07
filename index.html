@@ -10,22 +10,22 @@
 <body>
     
             <header class="icon">     
-                        <img class="icon__block" src="assets/highlight.png">
-                        <p class="icon__text">Услуги и сервисы</p> 
-                    <img class="icon__button" src="assets/burger.png" alt="кнопка">
-                    <img class="icon__divider1" src="assets/divider.png">
-                    <img class="icon__Group" src="assets/Group.png"  alt="логотип">
-            
-            
-                    <img class="icon__divider" src="assets/divider.png">
-                    <img class="icon__call" src="assets/call.png">
-                    <img class="icon__chat" src="assets/chat.png">
-                    <img class="icon__profile" src="assets/profile.png">
-                    <img class="icon__divider2" src="assets/divider.png">
-                    <p class="icon__text2"> Оставить заявку </p> 
-                    <img class="icon__repair" src="assets/repair.png"  alt="кнопка"> 
-                    <p class="icon__text3"> Статус ремонта </p>
-                        <img class="icon__checkstatus" src="assets/checkstatus.png"  alt="кнопка" >
+                <img class="icon__block" src="assets/highlightBLUESVG.svg">
+                <p class="icon__text">Услуги и сервисы</p> 
+                <img class="icon__button" src="assets/burgerSVG.svg" alt="кнопка">
+                <img class="icon__divider1" src="assets/divider.png">
+                <a href="index.html" class="modal__logo-link1">
+                <img class="icon__Group" src="assets/GroupSVG.svg"  alt="логотип">  
+                </a>                
+                <img class="icon__divider" src="assets/divider.png">
+                <img class="icon__call" src="assets/callSVG.svg">
+                <img class="icon__chat" src="assets/chatSVG1.svg">
+                <img class="icon__profile" src="assets/profileSVG.svg">
+                <img class="icon__divider2" src="assets/divider.png">
+                <p class="icon__text2"> Оставить заявку </p> 
+                <img class="icon__repair" src="assets/repairSVG.svg"  alt="кнопка"> 
+                <p class="icon__text3"> Статус ремонта </p>
+                <img class="icon__checkstatus" src="assets/checkstatusSVG.svg"  alt="кнопка" >
             </header>
             <!-- Модальное меню -->
   <div class="modal" id="menuModal">
@@ -33,51 +33,51 @@
       
       <!-- Верх -->
       <div class="modal__header">
-        <button class="modal__close" id="closeModal">
-          <img src="assets/search.png" alt="Закрыть">
-        </button>
-        <img src="assets/Group3.png" alt="Логотип CPS" class="modal__logo">
-        <button class="modal__search">
-          <img src="assets/search1.png" alt="Поиск">
-        </button>
+          <button class="modal__close" id="closeModal">
+          <img src="assets/searchSVG.svg" alt="Закрыть">
+          </button>
+          <a href="index.html" class="modal__logo-link1">
+          <img src="assets/Group3SVG.svg" alt="Логотип CPS" class="modal__logo">
+          </a>
+          <button class="modal__search">
+          <img src="assets/search1SVG.svg" alt="Поиск">
+          </button>
       </div>
 
       <!-- Навигация -->
-      <nav class="modal__nav">
-        
-
-        <a href="#" class="active-1">Ремонт техники</a>
-        
-       
-        <a href="#" class="active-2">Услуги и сервисы</a>
-       
-        <a href="#" class="active-3">Корпоративным клиентам</a>
-        <a href="#" class="active-4">Продавцам техники</a>
-        <a href="#" class="active-5">Партнерам</a>
-        <a href="#" class="active-5">Производителям</a>
-        <a href="#" class="active-6">Наши сервисные центры</a>
-        <a href="#" class="active-7">Контакты</a>
-        
-      </nav>
+      <ul class="modal__nav">
+        <li href="#" class="active-1">Ремонт техники</li>
+        <li href="#" class="active-2">Услуги и сервисы</li>
+        <li href="#" class="active-3">Корпоративным клиентам</li>
+        <li href="#" class="active-4">Продавцам техники</li>
+        <li href="#" class="active-5">Партнерам</li>
+        <li href="#" class="active-5">Производителям</li>
+        <li href="#" class="active-6">Наши сервисные центры</li>
+        <li href="#" class="active-7">Контакты</li>
+      </ul>
 
       <!-- Подвал -->
       <div class="modal__footer">
         <div class="modal__icons">
-          <img src="assets/call.png" alt="Звонок" class="modal__icons_call">
-          <img src="assets/chat.png" alt="Чат" class="modal__icons_chat">
-          <img src="assets/profile.png" alt="Профиль" class="modal__icons_profile">
+            <button class="modal__call" >
+            <img src="assets/callSVG.svg" alt="Звонок" >
+            </button>
+            <button class="modal__chat" >
+            <img src="assets/chatSVG1.svg" alt="Чат" >
+            </button>
+            <button class="modal__profile" >
+            <img src="assets/profileSVG.svg" alt="Профиль" >
+            </button>
         </div>
-        <a href="mailto:mail@cps.com" class="modal__mail">mail@cps.com</a>
-        <p class="modal__phone">8 800 890 8900</p>
+          <a href="mailto:mail@cps.com" class="modal__mail">mail@cps.com</a>
+          <a href="tel:88008908900" class="modal__phone">8 800 890 8900</a>
         <div class="modal__lang">
           <input type="radio" name="lang" id="lang-ru" checked>
-  <label for="lang-ru" class="lang-btn">RU</label>
-
-  <input type="radio" name="lang" id="lang-en">
-  <label for="lang-en" class="lang-btn">EN</label>
-
-  <input type="radio" name="lang" id="lang-ch">
-  <label for="lang-ch" class="lang-btn">CH</label>
+          <label for="lang-ru" class="lang-btn">RU</label>
+          <input type="radio" name="lang" id="lang-en">
+          <label for="lang-en" class="lang-btn">EN</label>
+          <input type="radio" name="lang" id="lang-ch">
+          <label for="lang-ch" class="lang-btn">CH</label>
         </div>
       </div>
 
@@ -88,17 +88,10 @@
   <main class="main">
     <div class="main-container">
       <div class="title">
-        <img class="title__icon" src="assets/highlight.png">
+        
         <h1 class="title__text">Услуги и сервисы</h1>
       </div>
-      <!-- Здесь твои блоки -->
-    </div>
-  </main>
-
-  <!-- Подключаем JS -->
-  <script src="scripts/menu.js"></script>
-        <main class="main">
-            
+      </div>      
             <div class="list">
                 <p class="list__note1_1120px">Ремонтируемые бренды</p>
                 <p class="list__note2_1120px">Ремонтируемые устройства</p>
@@ -117,7 +110,7 @@
             <p class="basic_text1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
             <p class="basic_text2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="basic_text4">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
             <div class="basic__further">
-                <img class="basic__arrow" src="assets/icon.png">
+                <img class="basic__arrow" src="assets/Arrow11SVG.svg">
                 <nav class="basic_text3">Читать далее</nav>
             </div>
         </div>
@@ -126,6 +119,7 @@
     
 </div>
     </div>
+    <script src="scripts/menu.js"></script>
     </main>
 </body>
 </html>
