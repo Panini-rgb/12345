@@ -125,9 +125,9 @@ padding-left: 18px;
 .list__note1 {
 line-height: 24px;
 letter-spacing: -0.2px;
-   border: 1px solid #B8FFEC; /* Цвет рамки */
-  padding: 8px 13px 8px 16px;             /* Отступ внутри рамки */
-  border-radius: 6px;        /* Скругление углов (по желанию) */
+   border: 1px solid #B8FFEC; 
+  padding: 8px 13px 8px 16px;             
+  border-radius: 6px;        
   background-color: #FFFFFF;
 }
 
@@ -185,6 +185,119 @@ letter-spacing: -0.2px;
  padding: 5px 0px 0px 0px;
  width: 320px;
  height: 176px;
+ margin-bottom: 24px;
+}
+/* свипер */
+.brands {
+  
+  
+
+}
+
+
+.brands__title {
+  width: 305px;
+    height: 64px;
+    padding-top: 2px;
+    padding-left: 16px;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  margin-bottom: 16px;
+  font-weight: 100;
+  background: linear-gradient(
+    to right,
+    #F8F8F8 0%,
+    #ffffff 100%
+  );
+  border-top: 1px solid #D9FFF5;
+}
+
+
+
+
+.brand-card {
+  background: #fff;
+  border-radius: 6px;
+  width: 240px ;
+  height: 72px ;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+    padding: 16px; 
+}
+.brands-swiper .swiper-slide {
+  width: 240px; 
+  height: 72px;
+     
+     
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  flex-wrap: nowrap; 
+          
+          margin-left: 24px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  
+  flex-shrink: 0;
+}
+
+.brand-card__btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  background: none;
+  color: #ff3e79;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.brands-swiper {
+  position: relative;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 85%,
+    transparent 100%
+  ); 
+}
+
+
+
+.brands-swiper .swiper-pagination {
+  display: block;
+  position: static;
+  margin-top: 16px;
+  text-align: center;
+  gap: 5px;
+}
+.brands-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #DDDDDD;
+  opacity: 1;
+}
+.brands-swiper .swiper-pagination-bullet-active {
+  background: #B5B6BC;
+}
+.brands-show-more {
+  display: none;
 }
 
 @media (min-width: 321px) and (max-width: 768px) { 
@@ -308,9 +421,9 @@ padding-right: 48px;
 line-height: 24px;
 letter-spacing: -0.2px;
 
-   border: 1px solid #B8FFEC; /* Цвет рамки */
-   padding: 8px 15px 7px 18px;        /* Отступ внутри рамки */
-  border-radius: 6px;        /* Скругление углов (по желанию) */
+   border: 1px solid #B8FFEC; 
+   padding: 8px 15px 7px 18px;        
+  border-radius: 6px;        
   background-color: #FFFFFF;
 }
 
@@ -365,8 +478,12 @@ margin-top: 9px;
 letter-spacing: 0.2px;
 padding: 4px 0px 0px 0px;
 margin: 0 auto;
+margin-bottom: 12px;
 }
-
+.basic__further {
+    display: flex;
+    margin-left: 4px;
+}
 .basic {
   display: flex;
   flex-direction:row;
@@ -383,16 +500,92 @@ padding: 10px 2px 0px 22px;
  width: 360px;
  height: 208px;
 border-radius: 10px 10px 10px 10px;
+margin-bottom: 16px
 }
-
-.basic__further {
-  display: flex;
-padding: 10px 22px 0px 0px;
-margin-left: 3px;
+/* свипер */
+.brands__title {
+   display: flex;
+  width: 768px;
+    height: 56px;
+    padding-top: 2px;
+    padding-left: 24px;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  align-items: center;
+  color: #7E7E82;
+  margin-bottom: 20px;
+  font-weight: 100;
+  background: linear-gradient(
+    to right,
+    #F8F8F8 0%,
+    #ffffff 100%
+  );
+  border-top: 1px solid #D9FFF5;
+  
+  margin-right: -12px;
 }
+ .brands-swiper {
+    overflow: visible;
+  }
 
+  .swiper-wrapper {
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 16px 24px
+  }
 
+  .swiper-slide {
+    width: 224px !important;
+  }
 
+  .swiper-pagination {
+    display: none;
+  }
+
+ .brands-swiper {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  /*  Показать всё */
+  .brands-show-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 16px 0 0 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: #1B1C21;
+  }
+
+  .brands-show-more__icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .brands-show-more.is-expanded .brands-show-more__icon {
+    transform: rotate(180deg);
+  }
+   .swiper-wrapper {
+    max-height: 168px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .swiper-wrapper.is-expanded {
+    max-height: 1000px;
+  }
+  .basic__arrow2 {
+    width: 8px;
+    height: 11px;
+    margin: 6px 9px 2px;
+}
 }
 
 @media (min-width: 769px)  {
@@ -484,7 +677,7 @@ letter-spacing: -0.2px;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 43px 0px;
   }
 
   .basic__column {
@@ -570,9 +763,9 @@ letter-spacing: -0.2px;
 }
   .list__note1_1120px {
     margin: 0px 0px 0px 22px;
-     border: 1px solid #B8FFEC; /* Цвет рамки */
-  padding: 8px 28px 8px 16px;             /* Отступ внутри рамки */
-  border-radius: 6px;        /* Скругление углов (по желанию) */
+     border: 1px solid #B8FFEC; 
+  padding: 8px 28px 8px 16px;             
+  border-radius: 6px;        
   background-color: #FFFFFF;
   }
   .list__note1,
@@ -592,10 +785,97 @@ letter-spacing: -0.2px;
     margin: 0px 0px 0px 0px;
     padding: 12px 0px 0px 0px;
   }
+
+/*  свипер */
+.brands__title {
+   display: flex;
+  width: 100%;
+    height: 56px;
+    padding-top: 2px;
+    padding-left: 32px;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  align-items: center;
+  color: #7E7E82;
+  margin-bottom: 24px;
+  font-weight: 100;
+  background: linear-gradient(
+    to right,
+    #F8F8F8 0%,
+    #ffffff 100%
+  );
+  border-top: 1px solid #D9FFF5;
+  
+  margin-right: -12px;
+}
+
+ .brands-swiper {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    margin-left: 32px;
+  }
+
+  
+
+  .brands-swiper .swiper-pagination {
+    display: none;
+  
+  }
+  .brands-swiper {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  
+   /* Показать всё */
+  .brands-show-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 16px 0 0 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: #1B1C21;
+  }
+
+  .brands-show-more__icon {
+    width: 16px;    
+  height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .brands-show-more.is-expanded .brands-show-more__icon {
+    transform: rotate(180deg);
+  }
+   .swiper-wrapper {
+    max-height: 168px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .swiper-wrapper.is-expanded {
+    max-height: 1000px;
+  }
+  .basic__arrow2 {
+    width: 8px;
+    height: 11px;
+    margin: 6px 9px 2px;
+}
 }
 
 
-/* ====== МОДАЛЬНОЕ МЕНЮ ====== */
+/* ====== МОДАЛ ====== */
 .modal {
   position: fixed;
   inset: 0;
@@ -631,7 +911,7 @@ letter-spacing: -0.2px;
   transform: translateX(0);
 }
 
-/* Верхняя панель */
+
 .modal__header {
   display: flex;
   align-items: center;
@@ -663,7 +943,7 @@ letter-spacing: -0.2px;
   padding-left: 95px;
   padding-top: 24px;
 }
-/* Навигация */
+
 .modal__nav {
     flex: 1;
   display: flex;
@@ -708,7 +988,7 @@ margin-left: 17px;
   border-radius: 0 4px 4px 0;
 }
 
-/* Подвал */
+
 .modal__footer {
   display: flex;
   flex-direction: column;
@@ -790,7 +1070,7 @@ margin-left: 15px;
 
 
 
-/* ===== Планшет (768px–1119px) ===== */
+
 @media (min-width: 321px) and (max-width: 768px) {
   .modal {
   position: fixed;
@@ -864,7 +1144,7 @@ margin-left: 15px;
     padding-top: 24px;
 }
 
-/* Навигация */
+
 .modal__nav {
   display: flex;
   flex-direction: column;
@@ -907,7 +1187,7 @@ margin-left: 24px;
 
 
 
-/* Подвал */
+
 .modal__footer {
   display: flex;
   flex-direction: column;
@@ -970,13 +1250,16 @@ margin-left: 23px;
 }
 }
 
-/* ===== Десктоп (1120px+) — меню скрыто ===== */
+/* ===== Десктоп 1120px ===== */
 @media (min-width: 1120px) {
-  .modal {
-    display: none !important;
-  }
-}
+  
 
+  .modal {
+   
+
+ display: none !important;
+}
+}
 /*Alyona*
 .container-forLaptop{
   display: contents;
