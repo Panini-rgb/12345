@@ -17,8 +17,8 @@ body {
 
 .icon {
     display: flex;
-    justify-content: space-evenly;
-    width: 320px;
+    justify-content: start;
+    width: auto;
   margin: 0 auto;
   padding-top: 18px;
   padding-right: 0px;
@@ -89,8 +89,16 @@ padding-left: 18px;
   height:40px;    
 }
 
-
-
+.icon__button {
+  padding-left: 16px;
+}
+.icon__checkstatus {
+  padding-left: 16px;
+  padding-right: 20px;
+}
+.icon__repair {
+  padding-left: 20px;
+}
 .icon__call,
 .icon__chat,
 .icon__profile,
@@ -106,15 +114,20 @@ padding-left: 18px;
 .basic_text4 {
   display: none;
 }
-
+.icon__call{
+  margin-left: auto;
+}
 .icon__Group {
    width:97px;
    height:51px;
+   padding-left: 17px;
+   padding-right: 17px;
 }
 
 .icon__divider {
   width:2px;
   height:32px;
+  margin-left: auto;
 }
 
 .title__icon {
@@ -185,8 +198,8 @@ letter-spacing: -0.2px;
 
 .basic__signboard {
  padding: 5px 0px 0px 0px;
- width: 320px;
- height: 176px;
+ width: 100%;
+    height: auto;
  margin-bottom: 24px;
 }
 /* свипер */
@@ -198,7 +211,7 @@ letter-spacing: -0.2px;
 
 
 .brands__title {
-  width: 305px;
+  width: auto;
     height: 64px;
     padding-top: 2px;
     padding-left: 16px;
@@ -302,9 +315,9 @@ letter-spacing: -0.2px;
   display: none;
 }
 
-@media (min-width: 321px) and (max-width: 768px) { 
+@media (min-width: 768px) and (max-width: 1120px) { 
 body {
-   width: 768px;
+   width: auto;
       font-family: 'TT Lakes Bold';
 margin: 0 auto;
 box-sizing: border-box;
@@ -318,7 +331,7 @@ background-color: #F8F8F8;
 .icon {
     display: flex;
     justify-content:flex-start;
-    width: 768px;
+    width: auto;
    align-items: center;
    border-bottom: 1px solid #D9FFF5;
    background-color: white;
@@ -507,7 +520,7 @@ margin-bottom: 16px
 /* свипер */
 .brands__title {
    display: flex;
-  width: 768px;
+  width: auto;
     height: 56px;
     padding-top: 2px;
     padding-left: 24px;
@@ -590,9 +603,9 @@ margin-bottom: 16px
 }
 }
 
-@media (min-width: 769px)  {
+@media (min-width: 1120px)  {
   body {
-    width: 1120px;
+    width: auto;
     
     background-color: #F8F8F8;
   }
@@ -635,7 +648,7 @@ margin: 0px 0px 0px 30px;
 
 }
 .icon__text2{
-  margin-left: 450px;
+  margin-left: auto;
   font-family: 'TT Lakes medium';
   line-height: 24px;
 letter-spacing: -0.2px;
@@ -794,7 +807,7 @@ letter-spacing: -0.2px;
 /*  свипер */
 .brands__title {
    display: flex;
-  width: 100%;
+  width: auto;
     height: 56px;
     padding-top: 2px;
     padding-left: 32px;
@@ -1260,7 +1273,7 @@ margin-left: 23px;
     body {
     width: auto;
     
-    width: auto;
+    
     overflow-x: hidden;
   
   }
