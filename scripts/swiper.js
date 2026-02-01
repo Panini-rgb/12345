@@ -1,7 +1,7 @@
 let swiper;
 
 function initSwiper() {
-  if (window.innerWidth <= 321 && !swiper) {
+  if (window.innerWidth <= 768 && !swiper) {
     swiper = new Swiper(".brands-swiper", {
       slidesPerView: 'auto',
       spaceBetween: 16,
@@ -12,7 +12,7 @@ function initSwiper() {
     });
   }
 
-  if (window.innerWidth > 321 && swiper) {
+  if (window.innerWidth > 768 && swiper) {
     swiper.destroy(true, true);
     swiper = null;
   }

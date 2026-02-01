@@ -10,25 +10,8 @@
     
 </head>
 <body>
-    
-            <header class="icon">     
-                <img class="icon__block" src="assets/highlightBLUESVG.svg">
-                <p class="icon__text">Услуги и сервисы</p> 
-                <img class="icon__button" src="assets/burgerSVG.svg" alt="кнопка">
-                <img class="icon__divider1" src="assets/divider.png">
-                <a href="index.html" class="modal__logo-link1">
-                <img class="icon__Group" src="assets/GroupSVG.svg"  alt="логотип">  
-                </a>                
-                <img class="icon__divider" src="assets/divider.png">
-                <img class="icon__call" src="assets/callSVG.svg">
-                <img class="icon__chat" src="assets/chatSVG1.svg">
-                <img class="icon__profile" src="assets/profileSVG.svg">
-                <img class="icon__divider2" src="assets/divider.png">
-                <p class="icon__text2"> Оставить заявку </p> 
-                <img class="icon__repair" src="assets/repairSVG.svg"  alt="кнопка"> 
-                <p class="icon__text3"> Статус ремонта </p>
-                <img class="icon__checkstatus" src="assets/checkstatusSVG.svg"  alt="кнопка" >
-            </header>
+    <div class="layout">
+           
             <!-- Модальное меню -->
   <div class="modal" id="menuModal">
     <div class="modal__content">
@@ -82,31 +65,101 @@
           <label for="lang-ch" class="lang-btn">CH</label>
         </div>
       </div>
-
     </div>
   </div>
 
   <!-- Осн -->
+   <aside class="sidebar">
+  <div class="sidebar__header">
+    <img src="assets/Group3SVG.svg" alt="CPS">
+    <button class="sidebar__search">
+      <img src="assets/search1SVG.svg" alt="">
+    </button>
+  </div>
+
+  <ul class="sidebar__nav">
+    <li href="#" class="active-8">Ремонт техники</li>
+    <li href="#" class="active-9">Услуги и сервисы</li>
+    <li href="#" class="active-10">Корпоративным клиентам</li>
+    <li href="#" class="active-11">Продавцам техники</li>
+    <li href="#" class="active-12">Партнёрам</li>
+    <li href="#" class="active-13">Производителям</li>
+    <li href="#" class="active-14">Наши сервисные центры</li>
+    <li href="#" class="active-15">Контакты</li>
+  </ul>
+
+  <div class="sidebar__footer">
+    <div class="sidebar__icons">
+      <button class="modal__call" >
+            <img src="assets/callSVG.svg" alt="Звонок" >
+            </button>
+            <button class="modal__chat" >
+            <img src="assets/chatSVG1.svg" alt="Чат" >
+            </button>
+            <button class="modal__profile" >
+            <img src="assets/profileSVG.svg" alt="Профиль" >
+            </button>
+    </div>
+
+    <a href="mailto:mail@cps.com" class="modal__mail">mail@cps.com</a>
+    <a class="modal__phone" href="tel:88008908900">8 800 890 8900</a>
+
+        <div class="modal__lang">
+          <input type="radio" name="lang" id="lang-ru" checked>
+          <label for="lang-ru" class="lang-btn">RU</label>
+          <input type="radio" name="lang" id="lang-en">
+          <label for="lang-en" class="lang-btn">EN</label>
+          <input type="radio" name="lang" id="lang-ch">
+          <label for="lang-ch" class="lang-btn">CH</label>
+        </div>
+  </div>
+</aside>
   <main class="main">
+    <header class="icon">     
+                <img class="icon__block" src="assets/highlightBLUESVG.svg">
+                <p class="icon__text">Услуги и сервисы</p> 
+                <img class="icon__button" src="assets/burgerSVG.svg" alt="кнопка">
+                <img class="icon__divider1" src="assets/divider.png">
+                <a href="index.html" class="modal__logo-link1">
+                <img class="icon__Group" src="assets/GroupSVG.svg"  alt="логотип">  
+                </a>                
+                <img class="icon__divider" src="assets/divider.png">
+                <img class="icon__call" src="assets/callSVG.svg">
+                <img class="icon__chat" src="assets/chatSVG1.svg">
+                <img class="icon__profile" src="assets/profileSVG.svg">
+                <img class="icon__divider2" src="assets/divider.png">
+                <p class="icon__text2"> Оставить заявку </p> 
+                <img class="icon__repair" src="assets/repairSVG.svg"  alt="кнопка"> 
+                <p class="icon__text3"> Статус ремонта </p>
+                <img class="icon__checkstatus" src="assets/checkstatusSVG.svg"  alt="кнопка" >
+            </header>
     <div class="main-container">
       <div class="title">
         
         <h1 class="title__text">Услуги и сервисы</h1>
       </div>
-      </div>      
-            <div class="list">
-                <p class="list__note1_1120px">Ремонтируемые бренды</p>
-                <p class="list__note2_1120px">Ремонтируемые устройства</p>
-                <p class="list__note1">Ремонтируемые устройства</p>
-                <p class="list__note2">Дополнительные услуги</p>
-                <p class="list__note3">Цены на услуги</p>
-                <p class="list__note3_1120px">Адреса сервисных центров</p>
-                <p class="list__note4">Специальные цены</p>
-                <p class="list__note5">Адреса сервисных центров</p>
-                <p class="list__note6"> Ремонтируемые бренды</p>
-                <p class="list__note7">Отзывы</p>
-            </div>
-    
+    </div>   
+      <div class="tabs">
+
+        <input type="radio" name="services" id="tab-1" checked>
+        <label for="tab-1" class="tab">Ремонтируемые устройства</label>
+
+        <input type="radio" name="services" id="tab-2">
+        <label for="tab-2" class="tab">Дополнительные услуги</label>
+
+        <input type="radio" name="services" id="tab-3">
+        <label for="tab-3" class="tab">Цены на услуги</label>
+
+        <input type="radio" name="services" id="tab-4">
+        <label for="tab-4" class="tab">Специальные цены</label>
+
+        <input type="radio" name="services" id="tab-5">
+        <label for="tab-5" class="tab">Адреса сервисных центров</label>
+
+        <input type="radio" name="services" id="tab-6">
+        <label for="tab-6" class="tab">Отзывы</label>
+
+   </div>   
     <div class="basic">
         <div class="basic__column">
             <p class="basic_text1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
@@ -123,65 +176,88 @@
 
   <div class="swiper brands-swiper">
     <div class="swiper-wrapper">
-
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_lenovo.png" alt="Lenovo">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_samsung.png" alt="Samsung">
-        <button class="brand-card__btn">›</button>
+         <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+         </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_apple.png" alt="Apple">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_bosch.png" alt="Lenovo">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_hp.png" alt="Samsung">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_acer.png" alt="Apple">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_viewSonick.png" alt="Lenovo">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_sony.png" alt="Samsung">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_lenovo.png" alt="Lenovo">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_samsung.png" alt="Samsung">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
       <div class="swiper-slide brand-card">
         <img src="assets/Bitmap_apple.png" alt="Apple">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
-      <div class="swiper-slide brand-card">
+      <div class="swiper-slide brand-card_1">
         <img src="assets/Bitmap_bosch.png" alt="Lenovo">
-        <button class="brand-card__btn">›</button>
+        <button class="arrow_slide">
+          <img src="assets/arrow_slide.png" alt="button">
+        </button>
       </div>
 
     </div>
@@ -201,6 +277,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="scripts/swiper.js"></script>
+</div>
 </body>
 </html>
 
