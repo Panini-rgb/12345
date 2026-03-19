@@ -6,7 +6,4 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
-import './scripts/menu.js';
-import './scripts/swiper.js';
-
+import './scripts';
