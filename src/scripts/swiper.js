@@ -7,10 +7,6 @@ let swiper;
 
 function initSwiper() {
   const brandsContainer = document.querySelector('.types-slider');
-  if (!brandsContainer) {
-    console.warn('Элемент .types-slider не найден');
-    return;
-  }
 
   if (window.innerWidth <= 768 && !swiper) {
     swiper = new Swiper(".types-slider", {
@@ -23,16 +19,13 @@ function initSwiper() {
         clickable: true,
       },
     });
-    console.log('Swiper инициализирован');
   }
 
   if (window.innerWidth > 768 && swiper && typeof swiper.destroy === 'function') {
     swiper.destroy(true, true);
     swiper = null;
-    console.log('Swiper уничтожен');
   }
 }
-
 
 window.addEventListener('load', initSwiper);
 window.addEventListener('resize', initSwiper);

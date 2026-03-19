@@ -95,7 +95,7 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/assets'),
           noErrorOnMissing: true,
           globOptions: {
-            ignore: ['**/fonts/**', '**/images/**'],
+            
           },
         },
       ],
